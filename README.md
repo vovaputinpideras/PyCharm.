@@ -1,18 +1,10 @@
-user_name = input("Enter your name: ")
-last_name = input("Enter your last name: ")
-phone_number = input("Enter your phone number: +38")
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
+def get_kb() -> ReplyKeyboardMarkup:
+    kb = ReplyKeyboardMarkup([
+        [KeboardButton('Keyboard 1'), KeboardButton('Keyboard 2'), KeboardButton('Keyboard 3')],
+        [KeboardButton('Keyboard 4'), KeboardButton('Keyboard 5'), KeboardButton('Keyboard 6')],
+        [KeboardButton('Keyboard 7'),
+    ])
 
-
-print("Python")
-print("Javascript (JS)")
-print("Java")
-print("C++")
-print("PHP")
-print("Colang")
-print("Scala")
-print("Rust")
-print("Dart")
-print("Rubi")
-print("Python")
-print("SQL")
+    return kb
